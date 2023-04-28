@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A simple HTML document</title>
+    </head>
+
+    <body>
+        <p>Hello World!</p>
+            <h3>Our Flask Buttons</h3>
+                <form method="post" action="/">               
+                    <input type="submit" value="dry run train" name="action1"/>
+                </form>
+                <p>{{train_result}}</p>
+                <form method="post" enctype="multipart/form-data"  action="/">
+                    <input type="file" id="myFile" name="uploaded-file" accept=".jpg">
+                    <input type="submit" value="inference" name="action2" />
+                </form>
+
+
+                <img src="{{user_image}}" alt="User Image">
+  
+                <p>{{inference_result}}</p>
+                
+
+            
+    </body>
+
+
+
+
+</html>
