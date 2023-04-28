@@ -41,7 +41,8 @@ def inference(path):
         device = torch.device("cpu")
 
     model = Net().to(device)
-    model.load_state_dict(torch.load(r"C:\Users\amyss\OneDrive\Documents\nyu-2\cloud_ml\hw5\src\mnist_cnn.pt"))
+    model.load_state_dict(torch.load("mnist_cnn.pt"))
+    #model.load_state_dict(torch.load(r"C:\Users\amyss\OneDrive\Documents\nyu-2\cloud_ml\hw5\src\mnist_cnn.pt"))
     model.eval()
 
     data = img_tensor.to(device)

@@ -6,7 +6,8 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__, template_folder='./template')
 app.secret_key = "super secret key"
-UPLOAD_FOLDER = r"C:\Users\amyss\OneDrive\Documents\nyu-2\cloud_ml\hw5\src"
+UPLOAD_FOLDER = os.getcwd()
+#UPLOAD_FOLDER = r"C:\Users\amyss\OneDrive\Documents\nyu-2\cloud_ml\hw5\src"
 
 
 @app.route("/", methods=['GET', 'POST'])
