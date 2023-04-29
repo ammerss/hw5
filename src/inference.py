@@ -1,18 +1,11 @@
 from __future__ import print_function
-import argparse
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from torchvision import datasets, transforms
-from torch.optim.lr_scheduler import StepLR
 
+import torchvision.transforms as transforms
 from train import Net
 
 import torch
 from PIL import Image
-import torchvision.transforms as transforms
-
 def inference(path):
 
     # open method used to open different extension image file
