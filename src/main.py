@@ -34,7 +34,8 @@ def index():
             #print(session['uploaded_img_file_path'])
             print (uploaded_img)
             print(img_filename)
-            inference_result = inference(UPLOAD_FOLDER + "\\" + img_filename)
+            inference_result = inference(img_filename)
+            #inference_result = inference(UPLOAD_FOLDER + "\\" + img_filename)
 
             
             return render_template("index.html", inference_result = inference_result, user_image = os.path.join(UPLOAD_FOLDER, img_filename))

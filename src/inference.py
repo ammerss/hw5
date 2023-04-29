@@ -33,7 +33,7 @@ def inference(path):
     
     # print the converted Torch tensor
     #print(img_tensor)
-    #print(img_tensor.size())
+    print(img_tensor.size())
 
     if torch.cuda.is_available():
         device = device = torch.device("cuda")
